@@ -66,9 +66,6 @@ const questionsByCategory = [
     icon: UserSearch,
     questions: [
       'Who are you?',
-      'What are your passions?',
-      'How did you get started in data science?',
-      'Where do you see yourself in 5 years?',
     ],
   },
   {
