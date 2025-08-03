@@ -10,7 +10,7 @@ const PROJECT_CONTENT = [
     title: 'Devarshi Wadadkar - AI/ML Portfolio',
     shortDescription: 'Modern, interactive portfolio website with AI-powered chat interface',
     description:
-      'A responsive, full-stack portfolio web application built to present Devarshi Wadadkar\'s professional profile. It includes an AI-powered chat assistant that leverages OpenAI tool calling for intelligent, dynamic responses. The assistant can retrieve and display information about skills, experience, and projects in real-time. The site features smooth animations, a responsive avatar, project carousels, an experience timeline, and a categorized skills display. It\'s optimized for all screen sizes and deployed with Vercel for high performance and fast delivery.\n\n**Key Features:**\n🤖 AI-Powered Chat Interface - Context-aware chatbot using OpenAI tool calling to dynamically retrieve and display skills, project details, and experience.\n🎨 Modern, Responsive UI - Fully responsive design with dark/light mode toggle, smooth animations, and fluid interactions via Framer Motion and Tailwind CSS 4.\n🧠 Tool-Integrated AI Assistant - AI assistant can invoke backend tools to respond with structured data—like project info, skills, etc.—in real time.\n🖼️ Interactive Project Carousel - Swipeable, responsive cards with animated previews and detailed descriptions.\n💼 Experience Timeline & Skills Badging - Animated experience cards with company logos and categorized, color-coded skill badges.\n📩 Professional Contact Modal - Multi-method contact options including email, LinkedIn, calendar booking, and direct resume download.\n\n**Technical Challenges:**\n⚙️ Implementing OpenAI Tool Calling - Designing and integrating custom tools that the chat assistant could invoke for dynamic content retrieval required architectural planning and state handling.\n🔄 Maintaining Chat Context Across Sessions - Ensuring the AI assistant retained context and managed user input gracefully while keeping performance in check with streaming responses.\n🎛️ Framer Motion + React State Management - Coordinating complex UI animations with real-time chat updates and state transitions without performance issues.\n🧪 Deploying Experimental React 19 & Next.js 15 Features - Navigating the bleeding edge of React and Next.js required testing and adapting to evolving API behavior.\n\n**Learning Outcomes:**\n🛠️ Deep Understanding of OpenAI SDK & Tool Calling - Gained hands-on experience with advanced LLM integrations and designing intelligent UI+AI systems.\n💻 Modern Frontend Engineering Best Practices - Strengthened skills in React 19, Next.js App Router architecture, TypeScript, and utility-first styling with Tailwind CSS.\n🧩 Modular Component Design - Learned to build scalable, reusable, and accessible UI components for a professional-grade app.\n🚀 End-to-End Deployment & Optimization - Mastered deploying full-stack apps with Vercel, handling environment configs, performance analytics, and production optimization.',
+      'A responsive full-stack portfolio built with Next.js 15, React 19, and Tailwind CSS 4, featuring an AI-powered chat assistant using OpenAI tool calling to retrieve real-time info on skills, projects, and experience.\n\nIncludes animated UI, dynamic avatar, project carousel, experience timeline, and categorized skill badges.\n\nLearned advanced LLM integration, modular UI design, and end-to-end deployment with Vercel.',
     techStack: [
       'Next.js 15',
       'React 19',
@@ -24,7 +24,6 @@ const PROJECT_CONTENT = [
       'Vercel',
       'GitHub'
     ],
-    date: '2024',
     links: [
       {
         name: 'live demo',
@@ -68,7 +67,6 @@ const PROJECT_CONTENT = [
       'SQLite',
       'Ollama'
     ],
-    date: '2024',
     links: [
       {
         name: 'github',
@@ -105,7 +103,6 @@ const PROJECT_CONTENT = [
       'HTML',
       'CSS'
     ],
-    date: '2024',
     links: [
       {
         name: 'github',
@@ -140,7 +137,6 @@ const PROJECT_CONTENT = [
       'DistilBART',
       'mT5'
     ],
-    date: '2024',
     links: [
       {
         name: 'github',
@@ -179,7 +175,6 @@ const PROJECT_CONTENT = [
       'ResNet50',
       'Xception'
     ],
-    date: '2024',
     links: [
       {
         name: 'github',
@@ -214,7 +209,6 @@ const PROJECT_CONTENT = [
       'Cosine Similarity',
       'CLI'
     ],
-    date: '2024',
     links: [
       {
         name: 'github',
@@ -261,9 +255,6 @@ const ProjectContent = ({ project }: { project: ProjectProps }) => {
       {/* Header section with description */}
       <div className="rounded-3xl bg-[#F5F5F7] p-8 dark:bg-[#1D1D1F]">
         <div className="space-y-6">
-          <div className="flex items-center gap-2 text-sm text-neutral-500 dark:text-neutral-400">
-            <span>{projectData.date}</span>
-          </div>
 
           <p className="text-secondary-foreground font-sans text-base leading-relaxed md:text-lg">
             {projectData.description}
