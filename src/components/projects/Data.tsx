@@ -7,6 +7,50 @@ import { url } from 'inspector';
 // Enhanced project content array with all projects
 const PROJECT_CONTENT = [
   {
+    title: 'Devarshi Wadadkar - AI/ML Portfolio',
+    shortDescription: 'Modern, interactive portfolio website with AI-powered chat interface',
+    description:
+      'A responsive, full-stack portfolio web application built to present Devarshi Wadadkar\'s professional profile. It includes an AI-powered chat assistant that leverages OpenAI tool calling for intelligent, dynamic responses. The assistant can retrieve and display information about skills, experience, and projects in real-time. The site features smooth animations, a responsive avatar, project carousels, an experience timeline, and a categorized skills display. It\'s optimized for all screen sizes and deployed with Vercel for high performance and fast delivery.',
+    techStack: [
+      'Next.js 15',
+      'React 19',
+      'TypeScript',
+      'Tailwind CSS 4',
+      'OpenAI API',
+      'Vercel AI SDK',
+      'Framer Motion',
+      'Radix UI',
+      'Lucide React',
+      'Vercel',
+      'GitHub'
+    ],
+    date: '2024',
+    links: [
+      {
+        name: 'live demo',
+        url: 'https://www.dwadadkar.me',
+      },
+      {
+        name: 'github',
+        url: 'https://github.com/Devarshi0808/Portfolio',
+      },
+    ],
+    images: [
+      {
+        src: '/portfolio-home.png',
+        alt: 'Portfolio home page with AI chat interface',
+      },
+      {
+        src: '/portfolio-chat.png',
+        alt: 'AI-powered chat interface with tool calling',
+      },
+      {
+        src: '/portfolio-projects.png',
+        alt: 'Interactive project carousel and timeline',
+      },
+    ],
+  },
+  {
     title: 'CloudMatch',
     shortDescription: 'AI-powered cloud marketplace discovery tool for AWS, Azure, and GCP',
     description:
@@ -298,6 +342,13 @@ const ProjectContent = ({ project }: { project: ProjectProps }) => {
 
 // Main data export with updated content
 export const data = [
+  {
+    category: 'Full-Stack Development',
+    title: 'Devarshi Wadadkar - AI/ML Portfolio',
+    shortDescription: 'Modern, interactive portfolio website with AI-powered chat interface',
+    src: '/portfolio-preview.png',
+    content: <ProjectContent project={{ title: 'Devarshi Wadadkar - AI/ML Portfolio' }} />,
+  },
   {
     category: 'Machine Learning',
     title: 'BriefPT - Bilingual Text Summarizer',
